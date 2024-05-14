@@ -21,7 +21,7 @@ def hash_jar_file(file_path):
         return None
 
 # Example usage:
-file_path = r"C:\Users\Fazle Yazdan\Desktop\My_projects\generate_hash\data\hivemind-1.0-rc-2.jar"
+file_path = r"C:\Users\Fazle Yazdan\Desktop\My_projects\generate_hash\test_data\hivemind-1.0-rc-2.jar"
 hash_value = hash_jar_file(file_path)
 if hash_value:
     print(f"Hash of {file_path}: {hash_value}")
