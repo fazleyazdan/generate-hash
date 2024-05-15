@@ -40,5 +40,5 @@ file_path = r"C:\Users\Fazle Yazdan\Desktop\My_projects\generate_hash\test_data\
 hash_value = hash_file(file_path)
 if hash_value:
     for key, val in hash_value.items():
-        print(f"\n{key} of the file is: {val}")
-
+        print(f"\n{key} : {val}")
+print("")
