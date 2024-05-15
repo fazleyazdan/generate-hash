@@ -26,7 +26,7 @@ def hash_pom_content_md5(url):
         return None
 
 # Example usage:
-url = r"C:\Users\Fazle Yazdan\Desktop\My_projects\generate_hash\test_data\hivemind-1.0-rc-2.jar"
+url = "https://repo1.maven.org/maven2/hivemind/hivemind/1.0-rc-2/hivemind-1.0-rc-2.pom"
 hash_value = hash_pom_content_md5(url)
 if hash_value:
     print(f"MD5 hash of content from {url}: {hash_value}")

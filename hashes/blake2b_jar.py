@@ -12,7 +12,7 @@ def hash_jar_file(file_path):
     """
     try:
         with open(file_path, "rb") as file:
-            hash_object = hashlib.blake2b()
+            hash_object = hashlib.blake2b(digest_size=32)
             for chunk in iter(lambda: file.read(4096), b""):
                 hash_object.update(chunk)
             return hash_object.hexdigest()
@@ -21,7 +21,7 @@ def hash_jar_file(file_path):
         return None
 
 # Example usage:
-file_path = r"C:\Users\Fazle Yazdan\Desktop\My_projects\generate_hash\test_data\hivemind-1.0-rc-2.jar"
+file_path = r"C:\Users\Fazle Yazdan\Desktop\My_projects\generate_hash\test_data\Django-1.1.3.tar.gz"
 hash_value = hash_jar_file(file_path)
 if hash_value:
     print(f"Hash of {file_path}: {hash_value}")

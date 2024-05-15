@@ -24,7 +24,7 @@ def hash_jar_file_sha256(file_path):
         return None
 
 # Example usage:
-file_path = r"C:\Users\Fazle Yazdan\Desktop\My_projects\generate_hash\test_data\hivemind-1.0-rc-2.jar"
+file_path = r"C:\Users\Fazle Yazdan\Desktop\My_projects\generate_hash\test_data\Django-1.10.8-py2.py3-none-any.whl"
 hash_value = hash_jar_file_sha256(file_path)
 if hash_value:
     print(f"SHA-256 hash of {file_path}: {hash_value}")
